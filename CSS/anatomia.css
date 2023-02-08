@@ -1,0 +1,18 @@
+/*Comentários*/
+
+/*
+nome do elemento(selector) {
+    propriedades: valores;
+}(declaration)
+selectors: conectam elemento HTML com CSS
+    Element/Type selector
+    global *
+    id #
+    class .
+*/
+
+h1 {
+    color: blue;
+    font-size: 60px;
+    background: gray;
+}
