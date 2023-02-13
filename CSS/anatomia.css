@@ -4,14 +4,43 @@
 nome do elemento(selector) {
     propriedades: valores;
 }(declaration)
+
 selectors: conectam elemento HTML com CSS
     Element/Type selector
     global *
     id #
     class .
+
+Estilo lido de cima para baixo, caso selector com infos conflitantes
+o mais embaixo é atribuido:
+    origem do estilo: inline > tag style > tag link
+    especificidade: cálculo matemático, cada tipo selector e origem de estilo possuem valores
+        .universal selector, combinators e nagation pseudo-class = 0
+        .type selector e pseudo-elements = 1
+        .class e attributes selectors = 10
+        .ID = 100
+        .inline = 1000
+    importância
 */
 
-h1 {
+/*@import url()*/
+
+* {
+    margin: 0;
+}
+
+/* ID selector */
+#container {
+    width: 200px;
+}
+
+/* Class selector */
+.m-40 {
+    margin: 40px;
+}
+
+/* Element/Type selector + Agrupamento de seletores */
+h1, h2 {
     color: blue;
     font-size: 60px;
     background: gray;

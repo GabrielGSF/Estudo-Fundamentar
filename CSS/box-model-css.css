@@ -1,0 +1,11 @@
+/*
+Quase tudo são caixas do css
+Elas possuem: posicionamento, tamanhos, espaçamentos, bordas, cores
+Elementos HTML são caixass
+*/
+
+h1 {
+    border: 1px solid red;
+    margin: 200px;
+    padding: 60px;
+}
