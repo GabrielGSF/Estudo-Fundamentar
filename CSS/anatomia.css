@@ -20,7 +20,14 @@ o mais embaixo é atribuido:
         .class e attributes selectors = 10
         .ID = 100
         .inline = 1000
-    importância
+    importância: !important - sobrescreve todo o resto (evitar uso)
+
+At rules: regras comportamento:
+@ identificador valor:
+    @import - CSS externo
+    @media - regras condicionais para vários dispositivos
+    @font-face - fontes externas
+    @keyframes - animations do CSS
 */
 
 /*@import url()*/
@@ -45,3 +52,10 @@ h1, h2 {
     font-size: 60px;
     background: gray;
 }
+
+/* Funções CSS - entre parênteses recebe argumentos */
+{
+    color: rgb(255,0,100);
+    width: calc(100% - 10px);
+}
+
