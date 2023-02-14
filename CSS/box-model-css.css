@@ -1,11 +1,68 @@
+
 /*
 Quase tudo são caixas do css
 Elas possuem: posicionamento, tamanhos, espaçamentos, bordas, cores
 Elementos HTML são caixass
-*/
 
+#Box Model - elemento representado por uma caixa retangular
+-propriedades caixa 2D:
+    -tamanho(largura x altura) - width e height
+    -conteúdo - content
+    -bordas - border
+    -preenchimento interno - padding
+    -espaço fora da caixa - margin
+
+#Box Sizing - cálculo tamanho total caixa
+
+-comportamento externo das caixas
+#Display Block - ocupa toda a linha, coloca próximo elemento abaixo desse
+#Display Inline - elementos um do lado do outro e não empurram para baixo
+
+#Margin - espaço entre os elementos
+    .margin-top
+    .margin-right
+    .margin-bottom
+    .margin-left
+    shorthand: top -> right -> bottom -> left
+-aplicada em elementos com display block
+-margin collapsing: top se junta ao bottom
+-values: <lenght>, <percentage>, auto
+
+#Outline - semelhante ao border, mas diferente 4 sentidos:
+-não modifica tamanho caixa, nõa é parte do Box Model
+-pode ser diferente de retangular
+-não permite ajustes individuais
+-mais usado pelo user agent para acessibilidade
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 h1 {
     border: 1px solid red;
     margin: 200px;
     padding: 60px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin: 10%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.display-block {
+    height: 40px;
+    width: 80px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid red;
+}
+
+span {
+    height: 100px;
+    margin: 10px; 
+    border: 1px solid green;
 }
