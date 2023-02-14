@@ -28,6 +28,39 @@ At rules: regras comportamento:
     @media - regras condicionais para vários dispositivos
     @font-face - fontes externas
     @keyframes - animations do CSS
+
+#Tipo numéricos 
+- <inerger> Numeros inteiros
+- <number> Decimal
+- <dimension> number com unidade junto: 90deg, 2s, 8px
+- <percentage> fração de outro número
+
+#Unidades comuns
+<lenght> - valor de distância: px, em, vw
+<angle> - ângulo: deg, rad, turn
+<time> - tempo: s, ms
+<resolution> resolução para dispositivos: dpi
+
+#Distância absoluta - fixas não altera valor
+1cm = 96px/2.54
+1in(Inches - polegadas) = 2.54cm = 96px
+1px = 1/96th of 1in
+
+#Distância relativas a outro valor: elemento pai, root, tamanho da tela
+-maior adaptação diferentes telas
+em : relativo a tamanho font elemento pai
+rem : ''' tamanho font elemento raiz (root/html)
+vw : ''' 1% da viewport wid
+vh : ''' 1% da viewport height
+
+-font padrão navegador 16px
+-viewport: parte tela exibida, janela/tela, o que está fora precisa scrollar
+
+#Função - reaproveitamento de código
+rgb(argumentos)
+hsl()
+url()
+calc(100% - 40px)
 */
 
 /*@import url()*/
@@ -59,3 +92,35 @@ h1, h2 {
     width: calc(100% - 10px);
 }
 
+
+div {
+    font-size: 16px;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+:root {
+
+}
+
+html {
+    
+}
+
+li {
+    font-size: 80%;
+}
+
+.box {
+    height: 300px;
+    width: 400px;
+    background-image: url(http://source.unsplash.com/random);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box :: after {
+    content: "Isso é uma string"
+}
