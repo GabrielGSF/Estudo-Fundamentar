@@ -1,0 +1,39 @@
+/*
+#Tipos:
+    background-color(para caixas)
+    color(para textos)
+    border-color(para caixas)
+
+#Valores:
+    palavra-chave(blue, transparent)
+    hexadecimal(#990011)
+    funções(rgb, rgba, hsl, hsla)
+
+#Hexadecimal - values 0-9 e A-F
+color: #090; RED, GREEN, BLUE
+
+#Rgb(red, green, blue, transparência);
+0-255
+rgb(255, 50, 70)
+rgb(34, 12, 64, 0.6)
+
+#HSL - Hue-Saturation-Lightness
+color: hsl(180, 100%, 50%, 60%)
+color: hsla(180, 100%, 50%, 60%)
+
+#Global values
+color: inheritr; - herda cor elemento anterior
+color: initial; - volta a sua cor inicial
+color: unset; - pega cor do contexto
+*/
+
+div {
+    color: blue;
+}
+
+h1 {
+    /*color: red;*/
+    /*color: currentcolor;*/
+    /*color: hsl(180, 100%, 50%, 60%);*/
+    color: hsla(180, 100%, 50%);
+}
