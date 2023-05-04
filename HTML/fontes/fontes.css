@@ -1,0 +1,32 @@
+/* Podemos usar o shorthand font para determinar os seguintes valores: 
+font-style, 
+font-variant, 
+font-weight, 
+font-stretch, 
+font-size, 
+line-height  
+font-family 
+*/
+p {
+    /*font-family: "Times New Roman", Times, sans-serif;*/
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    /* font-variant: small-caps; */
+    /* font-stretch: expanded; */
+    letter-spacing: 1em;
+    word-spacing: 1em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-decoration: wavy underline blue;
+    text-shadow: 1px  1px 1px red,
+                 2px 2px 1px gray; /*offset-x | offset-y | blur-radius | color*/
+    /* font: italic normal bold normal 3em/1.5 Helvetica, Arial, sans-serif; */
+}
+
+h1 {
+    font-family: 'Bruno Ace SC', cursive;
+    text-decoration: underline red;
+    text-align: center;
+}
