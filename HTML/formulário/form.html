@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!--
+        fildset:
+            -agrupa campos mesmo propósito
+            -semântico
+            -acessibilidade
+            -não precisa estar dentro formulario
+            -disabled: desabilita todos elementos, não envia
+            -form: id formulario fieldset pertence
+            -name: nome grupo
+        
+        <legend>
+            -nome do agrupamento
+            -primeiro elemento dentro fildset
+
+        <label>
+            -associar e identificar tags entrada de dados
+            -acessibilidade
+            -mudar foco entrada de dados
+            .for: 
+                -conexão label tag entrada dados
+                -id do input
+                -só funciona com elementos específicos
+        
+        <buttom>
+            -enviar formulários
+            -estilizado pelo user agent
+            .tye:
+                -submit
+                -reset
+                -buttom
+            .autofocus
+            .disabled
+            .name
+            .value
+            .form
+
+        <datalist>
+            -lista valores sugestão a uma tag input.
+            -valores sugestivos e não obrigatórios
+            -usuário pode selecionar valor ou inserir outro
+    -->
+    <form action="" method="" id="contato">
+        
+        <fieldset name="inputs-contato">
+            <legend>Contato</legend>
+            <label for="">Nome</label>
+            <input type="text">
+        </fieldset>
+
+        <fieldset disabled>
+            <legend>Telefone</legend>
+            <label for="">Número</label>
+            <input type="text">
+        </fieldset>
+    </form>
+
+    <fieldset form="contato">
+        <legend>Email</legend>
+        <label for="">Endereço</label>
+        <input type="text">
+    </fieldset>
+
+    <label for="nome">Nome Completo</label>
+    <input type="text" id="nome">
+
+    <form action="">
+        <input type="text" value="alguma coisa">
+        <button type="reset">Limpar</button>
+        <button type="submit" name="button" value="valor qualquer">Enviar</button>
+    </form>
+
+    <datalist id="fruitsdata">
+        <option>aplle</option>
+        <option>banana</option>
+        <option>mango</option>
+        <option>orange</option>
+        <option>cherry</option>
+    </datalist>
+</body>
+</html>
